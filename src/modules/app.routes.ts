@@ -5,14 +5,14 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
 
 export const routes: Routes = [
     {
-        path: 'manager',
-        component: ManagerLayoutComponent,
-        loadChildren: () => import('./manager/manager.module').then(m => m.ManagerModule)
-    },
-    {
         path: 'auth',
         component: AuthLayoutComponent,
         loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+    },
+    {
+        path: 'manager',
+        component: ManagerLayoutComponent,
+        loadChildren: () => import('./manager/manager.module').then(m => m.ManagerModule)
     },
     {
         path: '',

@@ -1,1 +1,31 @@
-<p>login works!</p>
+<div class="form login">
+  <h1 class="login__title">Login</h1>
+  <form action="" class="login__form">
+    <div class="login__group">
+      <label for="name" class="login__label">Username</label>
+      <input
+        type="text"
+        class="login__input"
+        id="name"
+        placeholder="Enter your username"
+      />
+    </div>
+    <div class="login__group">
+      <label for="password" class="login__label">Password</label>
+      <input
+        type="password"
+        class="login__input"
+        id="password"
+        placeholder="Enter your password"
+      />
+    </div>
+    <div class="login__group save">
+      <div class="save__info">
+        <input type="checkbox" name="save" id="save" />
+        <label for="save">Remember Me</label>
+      </div>
+      <a href="home.html" class="save_forgot">Forgot Password</a>
+    </div>
+    <button class="login__button">Login</button>
+  </form>
+</div>

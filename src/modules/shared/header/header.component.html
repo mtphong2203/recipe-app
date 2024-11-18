@@ -1,0 +1,47 @@
+<header class="flex justify-between items-center px-4 bg-cyan-500 text-white">
+  <a href="#" class="brand text-4xl font-semibold">Title</a>
+  <nav class="navbar">
+    <ul class="navbar-list flex">
+      <li class="navbar-item">
+        <a
+          [routerLink]="['/']"
+          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          >Home</a
+        >
+      </li>
+      <li class="navbar-item">
+        <a
+          [routerLink]="['/about']"
+          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          >About</a
+        >
+      </li>
+      <li class="navbar-item">
+        <a
+          [routerLink]="['/manage']"
+          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          >Management</a
+        >
+      </li>
+      <li class="navbar-item">
+        <a
+          [routerLink]="['/contact']"
+          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <div class="profile flex">
+    <a
+      [routerLink]="['/login']"
+      class="p-4 block hover:bg-cyan-400 hover:text-white rounded-sm"
+      >Login</a
+    >
+    <a
+      [routerLink]="['/register']"
+      class="p-4 block hover:bg-cyan-400 hover:text-white rounded-sm"
+      >Register</a
+    >
+  </div>
+</header>

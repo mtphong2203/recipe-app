@@ -20,7 +20,7 @@
       />
     </div>
     <div class="register__group">
-      <label for="password" class="register__label">Confirm Password</label>
+      <label for="password" class="register__label">{{ confirm }}</label>
       <input
         type="password"
         class="register__input"
@@ -35,6 +35,7 @@
       </div>
       <a href="home.html" class="save_forgot">Forgot Password</a>
     </div>
-    <button class="register__button">Register</button>
+    <button class="register__button" (click)="increase()">Register</button>
+    <span>{{ count }}</span>
   </form>
 </div>

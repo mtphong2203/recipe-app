@@ -1,34 +1,40 @@
 <header
-  class="flex justify-between items-center px-4 bg-cyan-500 text-white shadow-md sticky top-0"
+  class="relative flex justify-between items-center px-4 bg-cyan-500 text-white shadow-md"
 >
+  <button class="mobile md:hidden" title="Mobile menu" (click)="toggleShow()">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </button>
   <a href="#" class="brand text-4xl font-semibold">Title</a>
-  <nav class="navbar">
-    <ul class="navbar-list flex">
+  <nav
+    class="navbar hidden absolute bg-slate-200 top-full left-0 w-full md:block md:static md:bg-transparent"
+    [class.active]="isShow"
+  >
+    <ul class="navbar-list md:flex md:justify-center md:items-center">
       <li class="navbar-item">
         <a
           [routerLink]="['/']"
-          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          class="navbar-link p-4 block hover:bg-slate-100 md:hover:bg-cyan-400 hover:text-black rounded-md"
           >Home</a
         >
       </li>
       <li class="navbar-item">
         <a
           [routerLink]="['/about']"
-          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          class="navbar-link p-4 block hover:bg-slate-100 md:hover:bg-cyan-400 hover:text-black rounded-md"
           >About</a
         >
       </li>
       <li class="navbar-item">
         <a
           [routerLink]="['/manager']"
-          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          class="navbar-link p-4 block hover:bg-slate-100 md:hover:bg-cyan-400 hover:text-black rounded-md"
           >Management</a
         >
       </li>
       <li class="navbar-item">
         <a
           [routerLink]="['/contact']"
-          class="navbar-link p-4 block hover:bg-cyan-400 hover:text-white rounded-md"
+          class="navbar-link p-4 block hover:bg-slate-100 md:hover:bg-cyan-400 hover:text-black rounded-md"
           >Contact</a
         >
       </li>
